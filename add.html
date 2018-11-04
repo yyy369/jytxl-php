@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新增联系人</title>
+<link href="style/basic.css" rel="stylesheet" type="text/css" />
+<link href="style/detail.css" rel="stylesheet" type="text/css" />
+<link href="style/update.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="content">
+<h2 class="center">新建联系人信息</h2>
+<form name="form1" method="POST" id="form1" action="addaction.php">
+<ul>
+	<li>姓名：
+	  <input name="name" type="text" id="name" />
+	  [必填]	</li>
+    <li>电话：
+      <input name="telephone" type="text" id="telephone" />
+    [必填]	</li>
+    <li>地址：
+      <input name="address" type="text" id="address" />
+    </li>
+    <li>Email：
+      <input name="Email" type="text" id="Email" />
+    </li>
+    <li>QQ：
+      <input name="QQ" type="text" id="QQ" />
+    </li>
+</ul>
+
+<p class="right"><input name="" type="submit"  class="button" value="新增" />
+  <input class="button"  type="reset" name="button" id="button" value="重写" />
+  <a href="index.html" style="color:#000;text-decoration:none;">取消</a></p>
+</form>
+</div>
+</body>
+</html>

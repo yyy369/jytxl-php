@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+input{
+	border:none;
+	border-bottom:1px solid #999;
+	background:#eee;
+}
+input.button{
+	padding:5px;
+	cursor:pointer;
+	border:none;
+	font-size:12px;
+}
+li{
+	border:none;
+}

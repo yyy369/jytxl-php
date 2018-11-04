@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+}
+.center{
+	text-align:center;
+}
+.right{
+	text-align:right;
+}
+body{
+	width:500px;
+	border:1px solid #666;
+	margin:0 auto;
+	font-size:12px;
+}
+h2{
+	padding-bottom:20px;
+}
+#content{
+	background:#eee;
+	padding:10px;
+}
+#content table{
+	margin:0px auto;
+	border-collapse:collapse;
+	border:1px solid #666;
+	margin-bottom:20px;
+}
+#content td{
+	padding:5px 10px;
+	border:1px solid #666;
+}
+a{
+	color:#F90;
+}
+p.yema a{
+	padding:5px;
+}

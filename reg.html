@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+    <form action="regaction.php" method="post" name="form1">
+        用户名：<input type="text" name="name" id="name"><br>
+        密码：<input type="password" name="pwd" id="pwd"><br>
+        重复密码：<input type="password" name="pwd1" id="pwd1"><br>
+        验证码：<input type=text name="vcode">
+        <img id="vcodeimg" src="vcodeimg.php" onclick="changecode()">
+        <input type="submit" value="注册"  onclick="return check()">
+    </form>
+</body>
+</html>
+<script>
+function changecode(){
+    form1.vcodeimg.src = 'vcodeimg.php';
+}
+function check(){
+    var error='';
+    if (form1.name.value=='') {
+        error +='用户名不能为空\n';
+    }
+    if (form1.pwd.value=='') {
+        error +='密码不能为空\n';
+    }
+    if (form1.pwd.value!=form1.pwd1.value) {
+        error +='两次密码不一致\n';
+    }
+    if (error!='') {
+        alert(error);
+        return false;
+    }
+    return true;
+    
+}
+</script>

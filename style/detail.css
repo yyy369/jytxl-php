@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+ul{
+	width:80%;
+}
+li{
+	border-bottom:1px solid #999;
+	margin:10px;
+	padding-bottom:5px;
+}

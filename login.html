@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请您登录</title>
+</head>
+<body>
+    <form action="logaction.php" method="post" name="form1">
+        用户名：<input type="text" name="name" id="name"><br>
+        密码：<input type="password" name="pwd" id="pwd"><br>
+        <input type="submit" value="登录"  onclick="return check()">
+        <p>没有账号，去<a href="reg.html">注册</a></p>
+    </form>
+</body>
+</html>
+<script>
+function check(){
+    var error='';
+    if (form1.name.value=='') {
+        error +='用户名不能为空\n';
+    }
+    if (form1.pwd.value=='') {
+        error +='密码不能为空\n';
+    }
+    if (error!='') {
+        alert(error);
+        return false;
+    }
+    return true;
+    
+}
+</script>
