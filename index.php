@@ -4,7 +4,7 @@ include "classes/member.class.php";
 include "classes/page.class.php";
 $member=new member($_SESSION['user']['id']);
 $total=$member->total();
-$page= new page($tatal,4);
+$page= new page($total,4);
 $result=$member->selectlimit($page->limit);
 $rs=$member->selectall();
 $rows=mysql_num_rows($result);
